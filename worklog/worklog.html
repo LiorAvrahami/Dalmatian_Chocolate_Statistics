@@ -36,11 +36,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.5">
 </head>
 <body>
-<table><tbody><tr class="odd"><td style="text-align: center;"><a href="..\Site_Map.html" >Site Map</a></td>
-</tr>
-</tbody>
-</table>
-<br>
 <p>back in 2020 in the idf, they would give us free yogurts once a day. the yogurts were this brand that has these chocolate balls, that came in three colors:</p>
 <table><tbody><tr class="odd"><td style="text-align: center;"><img src="Package.jpg" /></td>
 </tr>
@@ -220,7 +215,10 @@ Wk_fill = 31</code>
 <p>notice the major difference in density between the light and dark chocolates. after some research I found that this 40% difference in density could be explained by the differences in fat and filler contents in the chocolates.</p>
 <h1 id="map-number-of-balls-to-mass-of-balls">map number of balls to mass of balls</h1>
 <p>given a number of each color of balls in a package, we would like a mapping that gives us the total mass of each color-group of balls. the most trivial relation is that the two should be proportional to one another. the ratio of total color-group mass to number of balls in color-group is called “single ball mass”. here I plot single ball mass as a function of the total number of balls (total number of balls is total of all colors):</p>
-<p><img src="mass_of_single_ball.png" /></p>
+<table><tbody><tr class="odd"><td style="text-align: center;"><img src="mass_of_single_ball.png" /></td>
+</tr>
+</tbody>
+</table>
 <p>to this data I fit a plane: <span class="math display">
 \vec{M}_\mu=\vec{N}\big(a+\vec{R}\cdot\vec{N}\big)
 </span>
@@ -260,7 +258,7 @@ Black - 14 </code>
 <p>after computing the p-value for this color-group’s mass distribution I concluded that the p-value of the package is:</p>
 <pre><code>p_value_of_package = 0.27</code>
 </pre>
-<p>which is extremely ordinary, and would be the kind of value one would expect if the designers would have literally taken a random package off the shelf and took photos of it’s content. note that if there was only one more white ball, then the p-value would plummet to , and if there were two more white balls it would plummet to</p>
+<p>which is extremely ordinary, and would be the kind of value one would expect if the designers would have literally taken a random package off the shelf and took photos of it’s content. note that if two of these 14 black chocolates on the cover were recolored to be white then the p value would plummet to be 0.1, and if we were to recolor 5 black chocolates to be white it would plummet to be 0.01.</p>
 <h1 id="summery">Summery</h1>
 <p>it was determined that the balls in these packages are selected by mixing a specific ration in a container and then taking an almost constant volume of balls regardless of color. it was also determined that it is likely that the image on the package was created by taking a random package off the shelf and constructing photos of it’s content, with minimal cherry picking.</p>
 </body>

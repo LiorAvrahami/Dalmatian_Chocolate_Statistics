@@ -269,7 +269,7 @@ p_value_of_package = 0.27
 ```
 
 which is extremely ordinary, and would be the kind of value one would expect if the designers would have literally taken a random package off the shelf and took photos of it's content.
-note that if there was only one more white ball, then the p-value would plummet to , and if there were two more white balls it would plummet to
+note that if two of these 14 black chocolates on the cover were recolored to be white then the p value would plummet to be 0.1, and if we were to recolor 5 black chocolates to be white it would plummet to be 0.01.
 
 # Summery
 

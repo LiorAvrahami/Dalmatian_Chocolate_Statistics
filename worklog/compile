@@ -1,1 +1,1 @@
-python "E:\Liors_Stuff\Tools\Programs\build markdown with pandoc\automate_compile_markdown_with_pandoc.py" E:\Liors_Stuff\Experimants\Dalmati_Madan_Statistics  -cc --site_map
+python "E:\Liors_Stuff\Tools\Programs\build markdown with pandoc\automate_compile_markdown_with_pandoc.py" E:\Liors_Stuff\Experimants\Dalmati_Madan_Statistics  -cc

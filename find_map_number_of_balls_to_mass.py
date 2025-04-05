@@ -10,7 +10,7 @@ def get_expected_total_mass(Nw, Nb, Nk, b, Rw, Rb, Rk):
 
 def probability_of_mass_vector_under_N_vector(Ww, Wb, Wk, Nw, Nb, Nk, std=0.9165564292659392, a=1.16415, R=0.0107086875):
     Wp = get_expected_total_mass(Nw, Nb, Nk, a, R, R, R)
-    print(Wp)
+    # print(Wp)
     W_vec = np.stack([Ww, Wb, Wk], axis=-1)
     d = (W_vec - Wp) / std
     return np.product(np.exp(-0.5 * d**2) / (np.sqrt(2 * np.pi) * std), axis=-1)
