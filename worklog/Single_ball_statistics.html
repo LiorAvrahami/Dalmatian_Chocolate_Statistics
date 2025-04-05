@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Single_ball_statistics</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="default_markdown_style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+   var mathElements = document.getElementsByClassName("math");
+   var macros = [];
+   for (var i = 0; i < mathElements.length; i++) {
+    var texText = mathElements[i].firstChild;
+    if (mathElements[i].tagName == "SPAN") {
+     katex.render(texText.data, mathElements[i], {
+      displayMode: mathElements[i].classList.contains('display'),
+      throwOnError: false,
+      macros: macros,
+      fleqn: false
+     });
+  }}});
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+<body>
+<table><tbody><tr class="odd"><td style="text-align: center;"><a href="..\Site_Map.html" >Site Map</a></td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>*theory will be done for wight balls, other colors are simaler.</p>
+<h1 id="analising-distribution-of-single-ball">analising distribution of single ball</h1>
+<h2 id="mass-of-single-ball">mass of single ball</h2>
+<h3 id="basic-theory">basic theory</h3>
+<p>denote W = the random variable, that corresponds to the mass of a single white ball.</p>
+<p>denote w = the random variable, that corresponds to the total mass of all the white balls in a single pack.</p>
+<p>denote n = the random variable, that corresponds to the total number of white balls in a single pack.</p>
+<p>denote S = the set of measurments: {(ni,wi) | where both ni and wi are both measurements of n and w}, where n corrisponds to the number of white balls in the measurment, and w corrisponds to the weight of the wight balls in the measurment.</p>
+<p><span class="math display">
+E[W] = \frac{\text{total mass of all measurments in S}}{\text{total number of balls in all measurments in S}} = \frac{\sum\limits_{i}{w_i}}{\sum\limits_{i}{n_i}}
+</span>
+</p>
+<p>but I want to know more about W, my oproch will be to assume some distribution for W and se if it coinsides with the measurments in S.</p>
+<h3 id="statistical-measurments">statistical measurments</h3>
+<table><tbody><tr class="odd"><td style="text-align: center;"><img src="group_mass_vs_group_size%20distributions_for_different_groups_of_balls.png" /></td>
+</tr>
+<tr class="even"><td style="text-align: center;">description</td>
+</tr>
+</tbody>
+</table>
+<h3 id="assumptions-on-distrebution-of-m">assumptions on distrebution of M</h3>
+<h4 id="m-is-uniformly-distributed">M is uniformly distributed,</h4>
+<p>so M ~ U[a,b],</p>
+<h4 id="idea-for-assumption-the-subdistrebution-of-m-in-a-spesific-pack">idea for assumption: the subdistrebution of M in a spesific pack</h4>
+<p>the subdistrebution of M in a spesific pack depends only on the total mass of balls in the pack, so:</p>
+<p>denote T = the random variable, that corresponds to the total mass of balls in a single pack. (this variable sums over all colors, so for a pack with 2gr black balls, 4gr brown balls and 1gr white ball, T would be 7gr).</p>
+<p>justification: the distribution of M might change if information regarding the other balls in the pack is added to the system. this is mostly because it is aperant from the basic statistics, that the total mass of the balls in a pack is almost fixed (<span class="math inline">Var(mw + mb + mk) &lt; Var(mw) + Var(mb) + Var(mk)</span>
+). but, assuming the differant ball colors have similar size distrebutions, and assuming the balls are mixed outside the container and then placed in the pack, the color of the other balls in the pack shouldn’t affect the size of a singled out ball. so it makes sense to only allow M to depend on (T-M)</p>
+</body>
+</html>
