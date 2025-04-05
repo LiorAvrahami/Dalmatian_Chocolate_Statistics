@@ -271,6 +271,8 @@ p_value_of_package = 0.27
 which is extremely ordinary, and would be the kind of value one would expect if the designers would have literally taken a random package off the shelf and took photos of it's content.
 note that if two of these 14 black chocolates on the cover were recolored to be white then the p value would plummet to be 0.1, and if we were to recolor 5 black chocolates to be white it would plummet to be 0.01.
 
+![](p_value_of_recoloring.png)
+
 # Summery
 
 it was determined that the balls in these packages are selected by mixing a specific ration in a container and then taking an almost constant volume of balls regardless of color.
