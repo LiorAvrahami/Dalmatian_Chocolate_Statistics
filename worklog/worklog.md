@@ -204,15 +204,17 @@ given a number of each color of balls in a package, we would like a mapping that
 |:---:|
 |![](mass_of_single_ball.png)|
 
+which means that if there are many balls, then each individual ball is smaller. 
+
 to this data I fit a plane:
 $$
-\vec{M}_\mu=\vec{N}\big(a+\vec{R}\cdot\vec{N}\big)
+\vec{M}_\mu=\vec{N}\big(a-\vec{R}\cdot\vec{N}\big)
 $$
 and find the best a,Rw,Rb,Rk values. Rw,Rb and Rk turned out to be pretty much identical. thus I decided to assume they are identical.
 
 the probability model that corrisponds to this is a simple 3d normal distribution around $\vec{M}_\mu$. that is:
 $$
-\vec{M}_\mu=\vec{N}\big(a+\vec{R}\cdot\vec{N}\big)
+\vec{M}_\mu=\vec{N}\big(a-R\cdot\Sigma{\vec{N}}\big)
 $$
 $$
 \rho = \Pi_i \frac{1}{\sqrt{2\pi}\cdot \text{Std}}\exp\bigg(\big((M_i - M_i\mu)/\text{Std}\big)^2\bigg)

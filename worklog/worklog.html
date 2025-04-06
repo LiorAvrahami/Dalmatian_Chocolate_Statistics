@@ -219,13 +219,14 @@ Wk_fill = 31</code>
 </tr>
 </tbody>
 </table>
+<p>which means that if there are many balls, then each individual ball is smaller.</p>
 <p>to this data I fit a plane: <span class="math display">
-\vec{M}_\mu=\vec{N}\big(a+\vec{R}\cdot\vec{N}\big)
+\vec{M}_\mu=\vec{N}\big(a-\vec{R}\cdot\vec{N}\big)
 </span>
  and find the best a,Rw,Rb,Rk values. Rw,Rb and Rk turned out to be pretty much identical. thus I decided to assume they are identical.</p>
 <p>the probability model that corrisponds to this is a simple 3d normal distribution around <span class="math inline">\vec{M}_\mu</span>
 . that is: <span class="math display">
-\vec{M}_\mu=\vec{N}\big(a+\vec{R}\cdot\vec{N}\big)
+\vec{M}_\mu=\vec{N}\big(a-R\cdot\Sigma{\vec{N}}\big)
 </span>
  <span class="math display">
 \rho = \Pi_i \frac{1}{\sqrt{2\pi}\cdot \text{Std}}\exp\bigg(\big((M_i - M_i\mu)/\text{Std}\big)^2\bigg)
